@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Daria Adonieva</title>
+  <!-- meta description -->
+  <meta name="description" content="Portfolio de Daria Adonieva, designer graphique.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+      <h1 class="logo"><a href="index.html"> Daria Adonieva </a></h1>
+
+    <nav class="header-nav">
+      
+      <a href="a-propos.html">à propos</a>
+      <a href="https://www.instagram.com/convalia_?igsh=MTFneGF1MG5ycTdkaw==">instagram</a>
+    </nav>
+  </header>
+
+
+  <div class="projets">
+    <a href="couverture.html" class="projet change-image" class="projet">
+      <img src="img/mockups02.jpg" alt="livre">
+      <h2>Couverture du livre</h2>
+    </a>
+<a href="constellation.html" class="projet change-image8" class="projet">
+      <img src="img/constellation image.jpg" alt="Constellation">
+  <h2>Vidéo "Constellation"</h2>
+</a>
+  <a href="affiche.html" class="projet change-image6" class="projet">
+      <img src="img/plume2.2.jpg" alt="affiche">
+      <h2>Affiche "Vyriy"</h2>
+    </a>
+  <a href="vagues.html" class="projet change-image9">
+      <img src="img/vagues s.jpg" alt="Les vagues">
+      <h2>Les vagues</h2>
+    </a>
+    <a href="portraits.html" class="projet change-image3" class="projet">
+      <img src="img/mariia1.jpg" alt="Portraits">
+      <h2>Portraits "Arm Women Now"</h2>
+    </a>
+   
+     <a href="muguet.html" class="projet change-image2" class="projet">
+      <img src="img/45678.jpg" alt="Muguet">
+      <h2>Gravure de muguet</h2>
+    </a>
+    
+    <a href="serigraphie.html" class="projet change-image7" class="projet">
+      <img src="img/serigraphie 1.jpg" alt="serigraphie">
+      <h2>Sérigraphie T-shirt</h2>
+    </a>
+        
+    <a href="tasse.html" class="projet change-image4" class="projet">
+      <img src="img/171.jpg" alt="Tasse">
+      <h2>Impression sur une tasse</h2> 
+    </a>
+         
+    <a href="newjeans.html" class="projet change-image5" class="projet">
+      <img src="img/new jeans powerpuff dodle full.jpg" alt="New Jeans">
+      <h2>Illustration "New Jeans"</h2>
+    </a>
+    
+      </div>
+
+  <script>
+    const projets = document.querySelectorAll('.projet');
+    projets.forEach(projet => {
+      projet.addEventListener('mouseover', () => {
+        projets.forEach(p => p.classList.add('unactive'));
+        projet.classList.remove('unactive');
+      });
+      projet.addEventListener('mouseout', () => {
+        projets.forEach(p => p.classList.remove('unactive'));
+      });
+    });
+  </script>
+</body>
+</html>
