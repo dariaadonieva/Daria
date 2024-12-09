@@ -64,6 +64,32 @@
     
       </div>
 
+      <script>
+      // Liste des URLs des images à précharger
+      const imageUrls = [
+        'img/mockups01.jpg',
+        'img/constel_2.jpg',
+        'img/456_2.jpg',
+        'img/Portrait 10.jpg',
+        'img/serig papier.jpg',
+        'img/project 1_2.jpg',
+        'img/lumiere_1.2.jpg',
+        'img/new jeans logo.jpg',
+        'img/vagues2.jpg'
+      ];
+      
+      // Fonction pour précharger les images
+      const preloadImages = (urls) => {
+        urls.forEach((url) => {
+          const img = new Image();
+          img.src = url;
+        });
+      };
+      
+      // Appeler la fonction pour précharger les images
+      preloadImages(imageUrls);
+      </script>
+
   <script>
     const projets = document.querySelectorAll('.projet');
     projets.forEach(projet => {
